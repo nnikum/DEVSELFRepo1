@@ -1,0 +1,6 @@
+<apex:page standardController="Impact__c">
+  <apex:pageBlock >
+  <apex:detail />
+  <!--<apex:detail relatedList="false"  />-->
+  </apex:pageBlock>
+</apex:page>

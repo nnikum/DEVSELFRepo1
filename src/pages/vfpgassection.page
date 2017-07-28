@@ -1,0 +1,15 @@
+<apex:page standardController="Impact__c">
+<apex:form >
+    <apex:pageBlock > 
+    <apex:pageBlockSection title="Detalied Cost Impact Analysis" columns="1">
+        <apex:inputField label="Year1" value="{!Impact__c.Year1__c}"/>
+    </apex:pageBlockSection>
+    <apex:pageBlockSection columns="2">
+        <apex:inputField label="Jan" value="{!Impact__c.Jan_Year1__c}"/>
+        <apex:inputField label="Feb" value="{!Impact__c.Feb_Year1__c}"/>
+        <apex:inputField label="Mar" value="{!Impact__c.Mar_Year1__c}"/>
+        <apex:inputField label="Apr" value="{!Impact__c.Apr_Year1__c}"/>
+    </apex:pageBlockSection>
+    </apex:pageBlock> 
+</apex:form>  
+</apex:page>

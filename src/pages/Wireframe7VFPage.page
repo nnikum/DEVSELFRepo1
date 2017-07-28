@@ -1,0 +1,55 @@
+<apex:page standardController="Trend_Change__c" >
+  <apex:form >  
+    <apex:pageBlock >   
+    <center> 
+    <font size="5">  
+      <b>HPC Project Trend / Change Request Form</b> <br></br>
+     </font>
+     </center>
+      <apex:pageBlockButtons >
+                <apex:commandButton action="{!cancel}" value="Cancel Trend / Change"/>
+                <apex:commandButton action="{!save}" value="Validate"/> 
+      </apex:pageBlockButtons>
+      <center>
+      Order of Magnitude(MoM) Impact Assessment Programme Level Review/Approval Signature Form
+      </center>
+      <br></br>
+      <apex:pageBlockSection columns="2">
+        <!--<apex:inputField value="{!Trend_Change__c.Trend_Ref_Num__c}"/>-->
+        <apex:inputField value="{!Trend_Change__c.Date_Raised__c}"/>
+        <apex:inputField value="{!Trend_Change__c.Raised_By__c}"/>
+        <apex:inputField value="{!Trend_Change__c.Spons_Cost_Eng__c}"/>
+        <apex:inputField value="{!Trend_Change__c.Spons_PGM_MGR__c}"/>
+<apex:inputField value="{!Trend_Change__c.Spons_Scheduler__c}"/>
+                </apex:pageBlockSection>
+        <apex:pageBlockSection columns="1">
+<apex:inputField value="{!Trend_Change__c.TR_CR_Status__c}"/>
+<apex:inputField value="{!Trend_Change__c.Title__c}" />
+<apex:inputField value="{!Trend_Change__c.Issue__c}"/>
+<apex:inputField value="{!Trend_Change__c.Justification__c}"/>
+ 
+<apex:selectRadio label="Is it mandaory for safty or to meet contractual, license, or capacity requirements?"> 
+<apex:selectOption itemLabel="Yes" itemValue="Yes"/>
+            <apex:selectOption itemLabel="No" itemValue="No"/>         
+        </apex:selectRadio>
+<apex:inputField value="{!Trend_Change__c.Recomnd_Path_Fwd__c}"/>
+<apex:selectRadio label="Has this been put in motion already?"> 
+<apex:selectOption itemLabel="Yes" itemValue="Yes"/>
+            <apex:selectOption itemLabel="No" itemValue="No"/>         
+        </apex:selectRadio>
+        <apex:inputField value="{!Trend_Change__c.Other_Options__c}"/>
+<apex:inputField value="{!Trend_Change__c.Impact__c}"/>
+</apex:pageBlockSection>
+<apex:pageBlockSection columns="2">
+<apex:inputField value="{!Trend_Change__c.Identify_Organization__c}"/>
+<apex:inputField value="{!Trend_Change__c.PRM_Impacted_PGM__c}"/>
+<apex:inputField value="{!Trend_Change__c.Other__c}"/>
+<apex:inputField value="{!Trend_Change__c.SEC_Impacted_PGM__c}"/>
+
+</apex:pageBlockSection>
+
+              
+</apex:pageBlock>
+
+  </apex:form>
+  </apex:page>

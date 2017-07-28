@@ -1,0 +1,4 @@
+<apex:page standardController="Impact__c"  extensions="TestRedirectController1" action="{!MyTest1}">
+ <apex:pageMessages id="showmsg"></apex:pageMessages> 
+ 
+  </apex:page>
