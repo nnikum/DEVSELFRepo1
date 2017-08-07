@@ -13,7 +13,7 @@ ApexPages.AddMessage(new ApexPages.Message(ApexPages.Severity.INFO, 'ImpId = ' +
 }
 public PageReference NNIKUMTEST(){
 
-                //testing 02
+                //testing 7 aug
                 string TCRId=ApexPages.currentPage().getParameters().get('PCRId');
                 string ImpId=ApexPages.currentPage().getParameters().get('id');
                 ApexPages.AddMessage(new ApexPages.Message(ApexPages.Severity.INFO, 'TCRId = ' + TCRId));
